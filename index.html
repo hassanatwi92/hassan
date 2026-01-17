@@ -17,19 +17,19 @@ html,body{
   position:fixed;
   inset:0;
   background:url("photo.jpg") center/cover no-repeat;
-  display:flex;
-  align-items:flex-start;
-  justify-content:center;
-  padding-top:60;
 }
 
 .text-box{
+  position:absolute;
+  left:50%;
+  top:15%;              /* 🔼 هون بتتحكّم بالعلو */
+  transform:translateX(-50%);
   background:rgba(0,0,0,0.45);
-  padding:20px 30px;
+  padding:16px 28px;
   border-radius:12px;
   text-align:center;
   color:white;
-  font-family: "Georgia", serif;
+  font-family: Georgia, serif;
 }
 
 .text-box h1{
@@ -65,6 +65,4 @@ document.addEventListener("touchstart", () => {
 </script>
 
 </body>
-
 </html>
-
